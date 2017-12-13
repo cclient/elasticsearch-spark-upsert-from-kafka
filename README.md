@@ -92,18 +92,18 @@ different part
 ```
 
 
-##run (env is gettyimages/spark:2.2.0-hadoop-2.7)
+## run (env is gettyimages/spark:2.2.0-hadoop-2.7)
 
-###1 package
+### 1 package
 
 sbt package
 
-###2 build docker image
+### 2 build docker image
  
 docker build -t my_spark ./
 
 
-###3 submit spark job
+### 3 submit spark job
 
 docker run -d  --name my_spark my_spark
 
